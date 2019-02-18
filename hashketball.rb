@@ -30,10 +30,10 @@ def game_hash
   end
   # Write your code herend
 
-def num_points_scored(players_numbers)
+def num_points_scored(players_name)
   game_hash.values.each do |team|
     team[:players].each do |player|
-      return player[:points] if player.has_value?(player_name)
+      return player[:points] if player.has_value?(player_numbers)
     end
   end
 end
