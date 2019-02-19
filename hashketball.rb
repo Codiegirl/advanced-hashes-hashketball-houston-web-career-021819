@@ -88,11 +88,10 @@ def player_numbers(team)
    team_info[:players].each do |player|
      if player [:shoe] > biggest_shoe
         biggest_shoe = player[:shoe]
-        player_rebounds
-         player_rebounds = player[:rebounds] 
-       end
-     end
-   end
+        player_rebounds = player[:rebounds]
+       end 
+     end 
+   end 
    return player_rebounds
  end
 
